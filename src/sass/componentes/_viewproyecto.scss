@@ -1,0 +1,51 @@
+@import './recurses';
+
+.proyect {
+  .port-proyect {
+    background-image: url(../imagenes/img1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    @include flex(center);
+    background-position: right;
+    width: 100%;
+    height: 67vh;
+
+    .text-mira {
+      background: rgba(144, 115, 219, 0.5);
+      border: 3px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 11px;
+      width: 50%;
+      text-align: center;
+      h4 {
+        color: white;
+      }
+    }
+  }
+  .proyectos{
+    .group-proy{
+      .col{
+        .card{
+          &-image{
+            a{
+               background: map-get($colors, 'wond') 
+            }
+           
+          }
+&-action{
+  @include flex(space-between);
+  a{
+    width: 100%;
+    margin-right: 0 !important;
+    padding: 1%;
+    color: map-get($colors, 'primary')!important;
+    i{
+     margin-right: 2%;
+    }
+  }
+}
+      }
+    }
+    }
+  }
+}

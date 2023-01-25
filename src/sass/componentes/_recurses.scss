@@ -1,0 +1,116 @@
+@font-face {
+    font-family: fligth;
+    src: url(../fonts/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: fmedium;
+    src: url(../fonts/Comfortaa-Medium.ttf);
+}
+
+@font-face {
+    font-family: fbold;
+    src: url(../fonts/Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: robligth;
+    src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: robregular;
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: robbold;
+  src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+  font-family: interbold;
+  src: url(../fonts/Inter/static/Inter-Black.ttf);
+}
+@font-face {
+  font-family: interregular;
+  src: url(../fonts/Inter/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: interbold1;
+  src: url(../fonts/Inter/static/Inter-ExtraBold.ttf);
+}
+
+$colors: (primary: #FF930A,
+    secundary: #090423,
+    letter: #D6BBFD,
+    letter2: #884AB2,
+    matiz:#FFFF,
+);
+
+$button-bg: mediumpurple;
+$button-text-color: #fff;
+$baby-blue: #f8faff;
+
+@mixin subtitle {
+  color:map-get($colors, 'matiz');
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 800;
+}
+@mixin flex($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+
+.bubbly-button{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $button-bg;
+  color: $button-text-color;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px mediumpurple;
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  
+  &:active{
+    transform: scale(0.9);
+    background-color: darken($button-bg, 5%);
+  }
+  
+  &.animate{
+    &:before{
+      display: block;
+      animation: topBubbles ease-in-out 0.75s forwards;
+    }
+    &:after{
+      display: block;
+      animation: bottomBubbles ease-in-out 0.75s forwards;
+    }
+  }
+}

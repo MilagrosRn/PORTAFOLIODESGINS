@@ -1,0 +1,27 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve src/",
+    "scss": "node-sass -watch sass -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilagrosRn/portafolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilagrosRn/portafolio/issues"
+  },
+  "homepage": "https://github.com/MilagrosRn/portafolio#readme",
+  "dependencies": {
+    "@babel/core": "^7.11.0",
+    "eslint": "^7.5.0",
+    "sass": "^1.26.10",
+    "serve": "^11.3.2"
+  }
+}

@@ -1,0 +1,283 @@
+@media (max-width:700px) {
+
+.min1{
+  height: 30vh;
+  img{
+    height: auto;
+  }
+}
+
+
+  .text-header {
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+
+      .text {
+        text-align: center;
+
+        h1 {
+          font-size: 3em !important;
+        }
+
+        h2 {
+          font-size: 2.5em !important;
+          font-family: robligth;
+        }
+      }
+
+      .logo-int {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+
+  .description-img {
+    display: block;
+    margin-top: 5%;
+
+    .img-des {
+      width: 100%;
+
+    }
+
+    .description-img-text {
+      width: 100%;
+      font-family: robligth;
+      color: map-get($colors, 'letter');
+
+      h2 {
+        font-size: 2.00rem;
+      }
+
+      button {
+        margin-top: 9%;
+        border: none;
+      }
+
+    }
+
+  }
+
+  .tools {
+    height: 100vh;
+
+    .section-tools {
+      padding: 1%;
+
+      .work {
+        font-size: 2.3em;
+      }
+
+      .work-tools {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .tool-container {
+          width: 45%;
+          height: 30%;
+          display: block;
+          align-self: auto;
+
+          .container-img {
+            margin: auto;
+            background: #FFFFFF;
+            box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+            padding: 1%;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              height: 60px;
+              display: block;
+              align-self: auto;
+            }
+          }
+
+          .container-text {
+            text-align: center;
+            width: 100%;
+
+            h3 {
+              font-size: 1.5rem;
+              color: map-get($colors, 'letter');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .space-habilities {
+    .section-habilities {
+      padding: 1%;
+
+      h2 {
+        font-size: 2.3em;
+      }
+
+      .content-all {
+        justify-content: center;
+
+        .each-card {
+
+          width: (86%/2);
+          margin: 2%;
+
+          .card-img {
+            margin-top: 7%;
+          }
+
+          .card-text {
+            height: 47%;
+            padding: 3%;
+
+            p {
+              font-size: 1.5em;
+              font-family: robregular;
+            }
+
+            hr {
+              margin: 3%;
+            }
+
+            a {
+              font-size: 1.2em;
+              color: map-get($colors, 'primary') !important;
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+
+  .sob {
+    width: 100%;
+
+    .row {
+      display: flex !important;
+      flex-direction: column !important;
+
+      .s4 {
+        height: 40vh;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .img-sob {
+          img {
+            width: 50%;
+            margin: 2%;
+          }
+        }
+
+        .redes {
+          height: 50%;
+          display: block;
+a{
+ .icon {
+            width: 18%;
+            margin-left: 3%;
+            margin-right: 3%;
+          } 
+}
+          
+        }
+      }
+
+      .s8 {
+        p {
+          font-size: 1em;
+        }
+        button {
+          width: 50%;
+          height: 60px;
+
+        }
+      }
+    }
+
+    .container {
+      width: 100% !important;
+    }
+  }
+  .habil{
+    .div-about-hab{
+      .about-hab{
+  
+        position: relative; 
+        margin-top: 30%;
+      }
+    }
+  }
+  .hab-cont-blandas {
+
+    .hab-blandas {
+      height: 90vh;
+      padding-top: 10%;
+display: flex;
+flex-direction: column;
+      .div-img-about{
+width: 100%;
+      }
+      
+    }
+  }
+
+  .row {
+    .col-portada-home {
+      .text-portada {
+
+        background: map-get($colors, 'primary');
+      }
+    }
+  }
+
+  .about {
+
+    height: 120vh;
+
+    .row {
+      .col {
+        p {
+          font-size: 1.8em;
+          line-height: 30px;
+        }
+      }
+
+
+
+
+    }
+  }
+
+  .container-tabs {
+    height: 100%;
+
+  }
+  .img-form{
+    display: none;
+  }
+}

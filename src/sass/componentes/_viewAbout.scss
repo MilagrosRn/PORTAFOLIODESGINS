@@ -1,0 +1,117 @@
+@import './recurses';
+
+.sob {
+  height: 90vh;
+
+  .general {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    .container-title {
+      padding: 3%;
+    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+
+        font-size: 2em;
+        font-weight: 800;
+        color: map-get($colors, 'secundary');
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      h3{
+        color: map-get($colors, 'letter2');
+        font-size: 1.5em;
+      text-align: center;
+      }
+
+      .general-section{
+        padding: 3%;
+        align-items: center;
+        text-align: center;
+      
+      p {
+        color: map-get($colors, 'secundary');
+        margin: 2.5%;
+        font-size: 1.2em;
+      }}
+
+    
+    }
+  }
+  
+  
+}
+.habil{
+  align-items: center;
+  width: 100%;
+  display: flex;
+  height: 20vh;
+  flex-direction: column;
+  h2 {
+
+    font-size: 2em;
+    font-weight: 800;
+    color: map-get($colors, 'secundary');
+
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  button {
+        width: 50%;
+        height: 60px;
+        background-color: map-get($colors, 'primary');
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 11px;
+        margin: 5%;
+        padding: 1rem;
+        border-radius: .25rem;
+        color: #FFFFFF;
+        transition: color .15s ease-in-out,
+        background-color .15s ease-in-out;
+        font-size: 20px;
+
+        &:hover,
+        &:active,
+        &:focus {
+          a{
+            color:#9073db !important;
+          }
+          
+          background: #FFFFFF;
+          border: 1px solid map-get($colors, 'primary');
+        }
+        a{
+          color: #FFFFFF;
+        }
+      }
+    }
+.hab-blandas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 2%;
+  .hab-img{
+    padding: 2%;
+  }
+  h3{
+    color: map-get($colors, 'letter2');
+    font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  }
+  img{
+    align-self: center;
+    width: auto;
+  }
+   p {
+        color: map-get($colors, 'secundary');
+        margin: 2.5%;
+        font-size: 1.2em;
+      }
+}
